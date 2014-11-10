@@ -1,25 +1,46 @@
-# [ngBoilerplate](http://joshdmiller.github.com/ng-boilerplate) [![Build Status](https://api.travis-ci.org/ngbp/ngbp.png?branch=v0.3.2-release)](https://travis-ci.org/ngbp/ngbp)
+# [ngpb-mobile-angular-ui](https://github.com/roland2025/ngpb-mobile-angular-ui)
 
-An opinionated kickstarter for [AngularJS](http://angularjs.org) projects.
+An othewize opinionated kickstarter for [AngularJS](http://angularjs.org) projects.
 
 ***
 
 ## Quick Start
 
-Install Node.js and then:
+Install Node.js and jq utility 
+
+On ubuntu
+* sudo apt-get install nodejs jq
+
+then:
 
 ```sh
-$ git clone git://github.com/joshdmiller/ng-boilerplate
-$ cd ng-boilerplate
+$ git clone https://github.com/roland2025/ngbp.git -b mobile-angular-ui ngbp-mobile-angular-ui
+$ cd ngbp-mobile-angular-ui
 $ sudo npm -g install grunt-cli karma bower
 $ npm install
 $ bower install
-$ grunt watch
+$ ./make.sh
 ```
 
-Finally, open `file:///path/to/ng-boilerplate/build/index.html` in your browser.
+Finally, open `file:///path/to/ngbp-mobile-angular-ui/build/index.html` in your browser.
 
 Happy hacking!
+
+### Chromium extension
+
+* Open chrome://extensions
+* Enable developer mode
+* Pack extension of **bin** directory
+* Key file was generated
+* Load you extension
+* Check the app id, and modify make.sh, variable: application_id
+
+Now when you run
+* ./make.sh
+You'll get web-app and chrome extension
+
+### Application icons
+Read `src/assets/icon/README.md`
 
 ## Purpose
 

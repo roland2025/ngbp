@@ -1,6 +1,9 @@
 *.sw*
+*.bak
 *~
 build/
+bin-chrome/
 bin/
 node_modules/
 vendor/
+*.pem

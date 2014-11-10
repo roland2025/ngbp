@@ -66,9 +66,14 @@ module.exports = {
       'vendor/angular-bootstrap/ui-bootstrap-tpls.min.js',
       'vendor/placeholders/angular-placeholders-0.0.1-SNAPSHOT.min.js',
       'vendor/angular-ui-router/release/angular-ui-router.js',
-      'vendor/angular-ui-utils/modules/route/route.js'
+      'vendor/angular-ui-utils/modules/route/route.js',
+      'vendor/angular-touch/angular-touch.js',
+      'vendor/mobile-angular-ui/dist/js/mobile-angular-ui.min.js'
     ],
     css: [
+        'vendor/mobile-angular-ui/dist/css/mobile-angular-ui-hover.css',
+        'vendor/mobile-angular-ui/dist/css/mobile-angular-ui-base.css',
+        'vendor/mobile-angular-ui/dist/css/mobile-angular-ui-desktop.css'
     ],
     assets: [
     ]
