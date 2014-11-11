@@ -68,7 +68,12 @@ module.exports = {
       'vendor/angular-ui-router/release/angular-ui-router.js',
       'vendor/angular-ui-utils/modules/route/route.js',
       'vendor/angular-touch/angular-touch.js',
-      'vendor/mobile-angular-ui/dist/js/mobile-angular-ui.min.js'
+      'vendor/mobile-angular-ui/dist/js/mobile-angular-ui.min.js',
+      'vendor/angular-translate/angular-translate.js',
+      'vendor/angular-translate-loader-partial/angular-translate-loader-partial.js',
+      'vendor/angular-translate-storage-local/angular-translate-storage-local.js',
+      'vendor/angular-translate-storage-cookie/angular-translate-storage-cookie.js',
+      'vendor/angular-cookies/angular-cookies.js'
     ],
     css: [
         'vendor/mobile-angular-ui/dist/css/mobile-angular-ui-hover.css',

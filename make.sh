@@ -30,6 +30,7 @@ cp -vr vendor/font-awesome/fonts/ bin/
 mkdir -p bin/vendor/mobile-angular-ui/dist
 cp -vr vendor/font-awesome/fonts/ bin/vendor/mobile-angular-ui/dist
 cp -vr vendor/mobile-angular-ui/dist/css bin/vendor/mobile-angular-ui/dist
+cp -vr src/_locales bin/locales
 
 # Generate manifest.json
 # Required - manifest begin

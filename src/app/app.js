@@ -5,6 +5,8 @@ angular.module( 'ngbpMobileAngularUi', [
   'ngbpMobileAngularUi.about',
   'mobile-angular-ui',
   'ngTouch',
+  'ngCookies',
+  'pascalprecht.translate',
   'ui.router'
 ])
 
@@ -86,6 +88,23 @@ angular.module( 'ngbpMobileAngularUi', [
     alert('You submitted the login form');
   };
 
+})
+
+.config(function($translateProvider, $translatePartialLoaderProvider) {
+
+    $translatePartialLoaderProvider.addPart('home');
+
+    $translateProvider.useLoader('$translatePartialLoader', {
+        urlTemplate: 'locales/{lang}/{part}.json'
+    })
+    .registerAvailableLanguageKeys(['en', "et"], {
+    'en_US': 'en',
+    'en_UK': 'en',
+    'et_EE': 'ee'
+    })
+    .fallbackLanguage('en')
+    .determinePreferredLanguage()
+    .useLocalStorage();
 })
 
 ;
